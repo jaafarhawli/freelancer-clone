@@ -125,6 +125,58 @@ a:visited {
 	background-color: #2c3e50;
 }
 
+.pop-up {
+	display: none;
+	margin: 5vh auto;
+	width: 75vw;
+	background-color: white;
+	border-radius: 10px;
+	border: solid black;
+}
+
+.pop-up.active {
+	display: block;
+	position: absolute;
+	left: 12.5vw;
+	overflow: auto;
+}
+
+.quit {
+	float: right;
+	width: 30px;
+	height: 30px;
+	margin: 20px;
+}
+
+.pop-up h1 {
+	margin-top: 45px;
+}
+
+.pop-up img {
+	display: block;
+	margin: 3vh auto;
+	width: 60%;
+	border-radius: 10px;
+}
+
+.pop-up p {
+	font-size: 15px;
+	text-align: center;
+	padding: 30px 15vw 10px;
+}
+
+.pop-up button {
+	display: block;
+	margin: 20px auto 40px;
+	width: 150px;
+	height: 45px;
+	background-color: #1abc9c;
+	color: white;
+	border: solid white;
+	border-radius: 10px;
+	font-size: 17px;
+}
+
 /* About */
 
 #about {
@@ -272,6 +324,7 @@ a:visited {
 	border-radius: 50%;
 	border: 2px solid white;
 	padding: 12px 0;
+	transition: 400ms;
 }
 
 .social-media-items:hover {
