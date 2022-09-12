@@ -9,18 +9,27 @@ body {
 		"Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+/* Navigation */
+
 .navigation {
-	background-color: #2c3e50;
+	background-color: rgb(44, 62, 80);
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	font-weight: bolder;
 	padding: 35px 7vw;
+	text-transform: uppercase;
+	position: fixed;
+	top: 0;
 }
 
 a:link {
 	color: white;
 	text-decoration: none;
+}
+
+a:visited {
+	color: white;
 }
 
 .title {
@@ -34,9 +43,12 @@ a:link {
 	align-items: center;
 }
 
+/* Hero */
+
 .hero {
 	width: 100%;
 	background-color: #1abc9c;
+	margin-top: 105px;
 }
 
 .hero img {
@@ -61,8 +73,8 @@ a:link {
 }
 
 .star {
-	width: 40px;
-	height: 40px;
+	width: 36px;
+	height: 36px;
 }
 
 .line {
@@ -82,6 +94,8 @@ a:link {
 	margin-top: 35px;
 	padding-bottom: 12vh;
 }
+
+/* Portfolio */
 
 #portfolio {
 	padding-bottom: 10vh;
@@ -111,6 +125,8 @@ a:link {
 	background-color: #2c3e50;
 }
 
+/* About */
+
 #about {
 	background-color: #1abc9c;
 	padding-bottom: 10vh;
@@ -131,7 +147,7 @@ a:link {
 	color: white;
 	font-size: 21px;
 	width: 27vw;
-	margin: 0 5px;
+	margin: 0 8px;
 }
 
 #about button {
@@ -144,18 +160,46 @@ a:link {
 	border: solid white;
 	border-radius: 5px;
 	font-size: 20px;
+	transition: 400ms;
 }
+
+.download {
+	width: 19px;
+	height: 19px;
+	position: relative;
+	top: 2px;
+	right: 3px;
+}
+
+#about button:hover {
+	background-color: white;
+	color: black;
+}
+
+.path {
+	transition: 400ms;
+}
+
+#about button:hover .path {
+	fill: black;
+}
+
+/* Contact */
 
 #contact h1 {
 	color: #2c3e50;
 }
 
 .form {
-	display: flex;
+	display: inline-flex;
 	flex-direction: column;
-	margin: 10px 0;
-	align-items: center;
+	margin: 10px auto;
 	gap: 10px;
+}
+
+.form-parent {
+	display: flex;
+	justify-content: center;
 }
 
 .input {
@@ -165,10 +209,11 @@ a:link {
 	height: 30px;
 	font-size: 25px;
 	padding: 40px 0;
+	outline: none;
 }
 
 .textarea {
-	padding: 20px 0 100px;
+	padding: 20px 0 140px;
 }
 
 .form button {
@@ -181,10 +226,13 @@ a:link {
 	border-radius: 5px;
 	font-size: 20px;
 	margin-bottom: 10vh;
+	opacity: 0.5;
 }
 
+/* Footer */
+
 .footer {
-	background-color: #2b3d4f;
+	background-color: #2c3e50;
 	display: flex;
 	justify-content: space-evenly;
 	padding: 10vh 0;
@@ -206,8 +254,36 @@ a:link {
 	color: white;
 }
 
+.footer a {
+	color: #1abc9c;
+	text-decoration: underline;
+}
+
+.social-media {
+	display: flex;
+	justify-content: center;
+	padding: 20px 0;
+	gap: 10px;
+}
+
+.social-media-items {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 2px solid white;
+	padding: 12px 0;
+}
+
+.social-media-items:hover {
+	background-color: white;
+}
+
+.social-media-items:hover path {
+	fill: black;
+}
+
 .copyrights {
-	background-color: #1c2a37;
+	background-color: #1a252f;
 	text-align: center;
 	font-size: 14px;
 	color: white;
