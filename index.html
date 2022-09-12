@@ -100,11 +100,11 @@
             </div>
             <div class="form-parent">
                 <div class="form">
-                    <div><input type="text" placeholder="Full name" class="input" id="name"></div>
-                    <div><input type="email" placeholder="Email address" class="input" id="email"></div>
-                    <div><input type="text" placeholder="Phone number" class="input" id="number"></div>
-                    <div><input type="textarea" placeholder="Message" class="input textarea" id="text"></div>
-                    <button>Send</button>
+                    <div><input type="text" placeholder="Full name" class="input" id="name" onfocus=this.value='' onkeyup="EnableDisable(this)"></div>
+                    <div><input type="email" placeholder="Email address" class="input" id="email" onfocus=this.value=''></div>
+                    <div><input type="text" placeholder="Phone number" class="input" id="number" onfocus=this.value=''></div>
+                    <div><textarea rows="3" cols="10" placeholder="Message" class="input textarea" id="text" onfocus=this.value=''></textarea></div>
+                    <input type="submit" value="Send" class="submit" id="send" disabled="disabled">
                 </div>
             </div>   
             <p class="alert" id="alert"></p>   
