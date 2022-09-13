@@ -5,17 +5,18 @@ let alert1 = document.getElementById('alert');
 let send = document.getElementById('send');
 let number_exp = /^(\+?961) ?71[0-9]{6}|76[0-9]{6}|70[0-9]{6}|03[0-9]{6}|3[0-9]{5}/g;
 let email_exp = /^[a-zA-Z0-9][a-zA-Z0-9._+/\-!?#${%&|]{2,63}@[a-zA-Z]{5,}.[a-zA-Z]{2,3}/g;
+let navbar = document.querySelector('.navigation');
 
 login.addEventListener('click', () => {
-	document.querySelector('.pop-up').classList.add('active');
+	document.querySelector('.pop-up').showModal();
 });
 
 logout.addEventListener('click', () => {
-	document.querySelector('.pop-up').classList.remove('active');
+	document.querySelector('.pop-up').close();
 });
 
 exit.addEventListener('click', () => {
-	document.querySelector('.pop-up').classList.remove('active');
+	document.querySelector('.pop-up').close();
 });
 
 send.addEventListener('click', () => {
@@ -51,3 +52,11 @@ function EnableDisable(text1) {
 		send.style.opacity = 0.4;
 	}
 }
+
+window.onscroll = () => {
+	if (window.scrollY > 105) {
+		navbar.classList.add('nav-active');
+	} else {
+		navbar.classList.remove('nav-active');
+	}
+};

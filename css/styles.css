@@ -21,6 +21,11 @@ body {
 	text-transform: uppercase;
 	position: fixed;
 	top: 0;
+	transition: 0.3s ease-in-out;
+}
+
+.nav-active {
+	padding: 18px 7vw;
 }
 
 a:link {
@@ -48,14 +53,13 @@ a:visited {
 .hero {
 	width: 100%;
 	background-color: #1abc9c;
-	margin-top: 105px;
 }
 
 .hero img {
 	display: block;
 	width: 15vw;
 	margin: 0 auto;
-	padding: 11vh 0 3vh;
+	padding: 27vh 0 3vh;
 }
 
 .hero h1 {
@@ -126,7 +130,6 @@ a:visited {
 }
 
 .pop-up {
-	display: none;
 	margin: 5vh auto;
 	width: 75vw;
 	background-color: white;
