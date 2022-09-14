@@ -296,6 +296,18 @@ a:visited {
 	color: red;
 }
 
+/* Contact List */
+
+#contact_list {
+	background-color: #1abc9c;
+	color: white;
+	text-align: center;
+}
+
+#contact_list h1 {
+	color: white;
+}
+
 /* Footer */
 
 .footer {
