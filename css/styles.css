@@ -308,6 +308,24 @@ a:visited {
 	color: white;
 }
 
+table,
+th,
+td {
+	border: 1px solid white;
+}
+
+td:first-child {
+	width: 10%;
+}
+
+td:nth-child(2) {
+	width: 15%;
+}
+
+td:nth-child(3) {
+	width: 20%;
+}
+
 /* Footer */
 
 .footer {
